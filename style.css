@@ -13,11 +13,13 @@ body {
 }
 
 .container {
-  background: rgba(0, 0, 0, 0.5);
+  background: #ffffff;
+  color: #333;
   padding: 2rem 3rem;
   border-radius: 1rem;
   max-width: 600px;
   width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 .rabbit-img {
@@ -29,14 +31,13 @@ body {
 }
 
 a {
-  color: #ffc107;
+  color: #c25b28;
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
 }
 
-/* Contact + social section */
 .contact-block {
   margin-top: 1.5rem;
 }
@@ -51,11 +52,11 @@ a:hover {
 .icon {
   width: 32px;
   height: 32px;
-  fill: #fff;
+  fill: #555;
   transition: fill 0.3s ease, transform 0.2s ease;
 }
 
 .icon:hover {
-  fill: #ffc107;
+  fill: #c25b28;
   transform: scale(1.15);
 }
