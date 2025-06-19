@@ -1,50 +1,61 @@
-/* Full-page soft gradient */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(145deg, #ffecd2 0%, #fcb69f 100%);
+  color: #fff;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  color: #3c2f2f;
-  text-align: center;
+  backdrop-filter: blur(3px);
 }
 
-/* Container overlay */
-.overlay {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 2.5rem 2rem;
-  border-radius: 1.5rem;
-  max-width: 500px;
-  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+.container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  max-width: 600px;
+  width: 90%;
 }
 
-/* Rabbit image styling */
 .rabbit-img {
   width: 100%;
+  max-width: 400px;
   border-radius: 1rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  margin-bottom: 1.5rem;
 }
 
-/* Title + contact */
-h1 {
-  margin: 0.5rem 0;
-  font-size: 2rem;
-}
-
-p {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-
-.contact a {
-  color: #d17a22;
+a {
+  color: #ffc107;
   text-decoration: none;
-  font-weight: bold;
 }
-.contact a:hover {
+a:hover {
   text-decoration: underline;
+}
+
+/* Contact + social section */
+.contact-block {
+  margin-top: 1.5rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+  transition: fill 0.3s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  fill: #ffc107;
+  transform: scale(1.15);
 }
